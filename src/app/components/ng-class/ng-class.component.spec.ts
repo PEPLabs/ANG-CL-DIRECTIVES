@@ -22,4 +22,23 @@ describe('NgClassComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should be red initially', () => {
+    fixture.detectChanges();
+    const pElement = fixture.nativeElement.querySelectorAll('.todo-container p')[1];
+
+    expect(pElement.classList).toContain('RedElement');
+  })
+
+  it('should be change to blue when button is clicked', () => {
+    const button = fixture.nativeElement.querySelector('button');
+    button.click();
+    
+    fixture.detectChanges();
+    const pElement = fixture.nativeElement.querySelectorAll('.todo-container p')[1];
+
+    expect(pElement.classList).toContain('BlueElement');
+  })
+
+
 });
