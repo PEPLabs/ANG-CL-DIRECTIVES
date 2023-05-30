@@ -22,4 +22,9 @@ describe('PipesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should be lowercase', () => {
+    const pElement = fixture.nativeElement.querySelectorAll('.todo-container p')[1];
+    expect(pElement.textContent).toBe('hello, world!');
+  })
 });
