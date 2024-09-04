@@ -22,4 +22,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - src/app/components/ng-for/ng-for.component.html
 - src/app/components/ng-style/ng-style.component.html
 - src/app/components/ng-class/ng-class.component.html
-- src/app/components/pipes/pipes.component.ts
+- src/app/components/pipes/pipes.component.html
